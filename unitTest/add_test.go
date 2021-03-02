@@ -20,6 +20,22 @@ func TestAdd(t *testing.T) {
 			},
 			want:3,
 		},
+		{
+			name: "Test add two and three will return five",
+			args: args{
+				x:2,
+				y:3,
+			},
+			want:5,
+		},
+		{
+			name: "Test add minus one and one will return zero",
+			args: args{
+				x:-1,
+				y:1,
+			},
+			want:0,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
